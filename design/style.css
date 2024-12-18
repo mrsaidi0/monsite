@@ -14,12 +14,14 @@
     margin-left: 20px;
     margin-right: 100px;
     padding: 0px;
+    font-size: 30px;
   
 
     
 }   
 .color{
     color: darkorange;
+    font-size: 25px;
 }
 /*.inline{
     display: flex;
@@ -100,6 +102,9 @@ h1{font-size: 50px;
           
     text-align: center;
     
+}
+.h1{
+    text-align: left;
 }
     
 
@@ -209,6 +214,7 @@ footer{
     padding: 15px;
     border: none;
     margin-top: 90px;
+    height: 200px;
 }
 .conteneur{
     width: 1300px;
@@ -216,10 +222,14 @@ footer{
     }
 
 #bienvenue{
-    background-image:url("../images/futura-partir-au-japon.jpeg");
+    background-image: url(" https://www.indexmaroc.com/wp-content/uploads/2016/05/agence-voyages-maroc.jpg");
+    /*background-image:url("../images/futura-partir-au-japon.jpeg");*/
     background-repeat: no-repeat; /*pour ne pas repeter l'image */
     background-size:cover;   /*pour la meme dimension sur la longeur et la hauteur*/
     height: 100vh;
+    border-radius: 5px;
+    
+  
     
     
     
@@ -239,6 +249,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 15px;
+    padding-top: 50px;
 }
 /*si on creee une classe parente c'est pour que toutes les proprietes qu'on appliquera a cette classe
 /puisse se repeter sur les classes enfant cela nous evite de mettre la meme chose sur chaque classe
@@ -249,6 +261,9 @@ footer{
 }
 *{
     box-sizing: border-box;
+}
+.font{
+    font-size: 25px;
 }
 /*inline-block qui peut etre redimensionner et avoir des elements autour ,block qui ne peut pas avoir des elements autour*/
 /*sur kyoto comme elle commence a la colonne n 2 et ca termine a 4 donc a 3 du coup et nous on defini que 2 colonnes donc ca prend 2 plus une colonne et il reste une colonne d'ou on met l'element d'apres et du coup l'element suivant n'a plu de place alors on lui en cree mais petite place alors on rend kyoto a auto pour qu'il soit 1fr*/
