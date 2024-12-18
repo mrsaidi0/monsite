@@ -1,0 +1,294 @@
+
+
+    
+  
+
+/*.info{
+    display: flex;
+  
+}*/
+ 
+.vide{
+    
+    color: #0cc6df;
+    margin-left: 20px;
+    margin-right: 100px;
+    padding: 0px;
+  
+
+    
+}   
+.color{
+    color: darkorange;
+}
+/*.inline{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    color: rgb(255, 102, 0);*/
+  
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    color: #131212;
+    margin: 10px 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: "pacifico";  
+
+}
+
+.blocklist{
+    display:flex;
+}
+.seule{
+    margin-top: 0px ;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 0px;
+    color: darkorange;
+   
+}
+
+
+
+.lien{
+    
+   display:inline-flex; /*on peut utiliser inline-flex si on veut avoir les proprietes flexbox mais on voudrais que les elements soient ranges sur la memem ligne alors que flex range les elements l'un apres l'autre sur une ligne suivante*/
+   align-items: center;
+   justify-content: right;
+    margin-top: 10px;
+    color: hsl(236, 89%, 24%);
+    
+    gap: 10px;
+    
+    
+    
+}
+.lien:visited{
+    font-weight: bold;
+}
+
+.lien:hover{
+   border:3px solid #ECF8F6;
+} 
+
+
+.bloc{
+ margin-bottom: 10px;
+    
+   
+}
+
+
+a{
+    text-decoration: none;
+}
+nav a,nav li{
+    color: rgb(124, 84, 8);
+}
+body{font-family: Arial,serif;
+    margin: 0px;
+     
+}
+
+h1{font-size: 50px;
+    font-family:'pacific',sans-serif ;  /*font family est pour la police  . aussi margin c'est pour ce sont les marges en dehors d'une balise*avec la couleur orange*/
+    margin: 40px 0px ;                                     /*et pedding c'est sont les marges dans ma balise avec la couleur verte,on peut aussi preciser le pixel de nos marges si on en veut*/
+          
+    text-align: center;
+    
+}
+    
+
+.top{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px ;   /* pedding controle l'espace entre l'element et le balise ca veut dire la balise on la redimensionne pas par contre on ajuste l'espce entre le texte a l'interieur de la balise par contre margin controle l'espace entre la balise et les elements */
+
+
+}
+.ville {
+    background-size: cover;
+    height:100% ;
+    width: 100%;   /*height et widht defini la hauteur et la largeur comme dans une boite ils definissent la place complete ou pas*/
+    /*min height et min widht adaptent l'element dans la boite peu importe l'espace donne*/ 
+    
+    min-height: 400px;  
+    border-radius: 20px;
+    border: 3px solid white;
+    transition:all 1s;
+    font-size: 40px;
+    color: white;
+    text-shadow:0 0 30px black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    /*box-shadow:0 0 200px rgba(255, 0,0,0.5);   ici si on ne definit pas de coleur pour un des elements alors ce dernier devient noir et quand on fait un alpha la on gere sa transparence*/  
+}
+.ville:hover{
+    border: 3px solid rgb(107, 56, 27); /*on reecrit vile.hover pur que l'element hover ne soit pas utilise en pemenance et ne soit utilise seulement si on survole l'image*/
+    display: flex;
+}
+.quebec{
+    background-image: url("https://m1.quebecormedia.com/emp/emp/AdobeStock_9146183633340052-4f2c-42e8-bf2e-dad35695822b_ORIGINAL.jpg?impolicy=crop-resize&x=0&y=0&w=5470&h=3647&width=960");
+    grid-row:1/3;  /* une ligne quelconque mais ca prend  la hauteur*/
+}
+
+.kyoto{
+    background-image: url("https://lp-cms-production.imgix.net/2023-02/shutterstock_1017748444.jpg");
+    grid-column:2/4 ;  /* une colonne quelconque mais ca prend a largeur*/
+    
+}
+.kinshasa{
+    background-image: url(" https://congorassure.cd/sites/default/files/styles/style_article/public/2023-12/A3380C14-3464-4F8C-AF3D-AD8AA6AA2C3B.jpeg?itok=WJOWqwrn");
+}
+
+.lubumbashi{
+    background-image: url("https://c8.alamy.com/comp/2R11JBK/colonial-building-lubumbashi-dr-congo-2R11JBK.jpg");
+}
+.flexboxville{
+    /*display: flex;  /*on a cree cette clase pare qu'on peut pas utiliser flexbox une duxieme dans la balise quiest commune et du coup on cree une autre balse contenant une classe a qui on dernerra les modifications et les partageara*/
+    /*grid_template collums:repeat c'est pour repeter le meme espace sur chaque element et sas repeat la chaque element ajuste son espace*/
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    /*grid-template-rows:1fr 2fr;   /* min_heiht et min_widht sont la taille qu'on donne a nos elwments par contre height et widht sont um peu comme le multiplicateur de la taille par exemple 50 c'est la taille initiale et 100 le double de la taille et aimsi de suite*/
+    gap:30px;
+    
+    
+}
+
+.mot{
+    color:blueviolet
+    
+}
+.italic{
+    font-style: italic;
+
+}
+.underline{
+    text-decoration:underline ;
+}
+.bold{
+    font-weight: bold;
+    
+}
+.contenu{
+    padding: 10px;
+    
+}
+header{
+    
+    font-size: 60px;
+    font-family: 'pacifico','cursive'; /*proprietes pour agence travel*/
+    color:white;
+    text-shadow: 0 0 30px black;
+    
+}    
+
+ul{
+ 
+    list-style-type: none;  
+    padding: 0; /*proprietes communes pour toutes mes listes*/
+    display: flex;
+    gap: 20px;
+    font-size: 15px; 
+    
+     
+    
+                     
+}
+footer{
+ 
+    background:left/100px url("https://www.pngitem.com/pimgs/m/160-1605161_cities-background-for-footer-skyline-hd-png-download.png"),#cde6e1;
+    font-size: 11px;   /* proprietes pour mon pied de page ECF8F6*/
+    padding: 15px;
+    border: none;
+    margin-top: 90px;
+}
+.conteneur{
+    width: 1300px;
+    margin:0 auto ;
+    }
+
+#bienvenue{
+    background-image:url("../images/futura-partir-au-japon.jpeg");
+    background-repeat: no-repeat; /*pour ne pas repeter l'image */
+    background-size:cover;   /*pour la meme dimension sur la longeur et la hauteur*/
+    height: 100vh;
+    
+    
+    
+    display: flex; /*display dirige une classe donc du contenu tandis que text_lign dirige du texte*//*flexbox met tous les elements de type block ou pas sur la meme ligne*/
+    justify-content: center; /*permet sur l'axe des abscisses de positionner les elements les elements donc sur la largeur*/
+    align-items: center; /*permet sur l'axe des ordonnees de positionner les elements donc de haut en bas*/
+    flex-direction: column;    /*permet de positionner les elements de haut en bas */
+    
+
+} 
+.slogan{
+    display: block; /*display pour changer la nature d'une balise*/
+    font-size: 30px;
+    font-family: 'sans serif';
+}
+.flexfoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*si on creee une classe parente c'est pour que toutes les proprietes qu'on appliquera a cette classe
+/puisse se repeter sur les classes enfant cela nous evite de mettre la meme chose sur chaque classe
+/nous creons des classes aussi dans nos elements enfants parce que si on veut appliquer une propriete particuliere a une classe et pas a une autre on a qu'a l'appleler par son nom*/
+.pied{
+    display: flex;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+/*inline-block qui peut etre redimensionner et avoir des elements autour ,block qui ne peut pas avoir des elements autour*/
+/*sur kyoto comme elle commence a la colonne n 2 et ca termine a 4 donc a 3 du coup et nous on defini que 2 colonnes donc ca prend 2 plus une colonne et il reste une colonne d'ou on met l'element d'apres et du coup l'element suivant n'a plu de place alors on lui en cree mais petite place alors on rend kyoto a auto pour qu'il soit 1fr*/
+
+@media all and (max-width: 1350px) {
+    .conteneur{
+        width: 800px;
+    }
+ 
+    .flexboxville{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .kyoto{
+        grid-column: auto;
+    }
+    .lubumbashi{
+        grid-column: 1/3;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .conteneur{
+        width: 500px;
+    }
+    .flexboxville{
+        grid-template-columns: 1fr;
+    }
+    .quebec{
+        grid-row: auto;
+    }
+    .lubumbashi{
+        grid-column: auto;    /*comme on s'est cree une colonne de plus on met auto pour qu'il soit 1 fr*/
+    }
+    .flexfoot{
+        flex-direction: column;
+    }
+}
+
+
+/* telephone:400
+tablette:760
+notbook:1024*/
+
