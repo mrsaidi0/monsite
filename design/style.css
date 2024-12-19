@@ -1,12 +1,18 @@
 
 
-    
+.informations{
+    text-align: center;
+}
+.footmarge{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
   
-
-/*.info{
-    display: flex;
-  
-}*/
+.marge{
+margin: 30px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
  
 .vide{
     
@@ -21,7 +27,7 @@
 }   
 .color{
     color: darkorange;
-    font-size: 25px;
+    font-size: 20px;
 }
 /*.inline{
     display: flex;
@@ -104,7 +110,7 @@ h1{font-size: 50px;
     
 }
 .h1{
-    text-align: left;
+    text-align: center;
 }
     
 
