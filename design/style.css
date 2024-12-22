@@ -1,4 +1,36 @@
+.lig2{
+    padding: 10px 0px;
+}
+.lig{
+    margin: 95px;
+}
 
+
+
+.background{
+    display: inline-flex;
+    background-color: hsl(261, 58%, 24%);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+
+
+
+
+
+.bouton{
+    margin: 20px;
+    color: rgb(27, 27, 78);
+    font-size: 30px;
+    background-color: hsl(36, 56%, 48%);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    
+  
+}
 .agency{
     font-size: 60px;
 }
@@ -143,7 +175,7 @@ h1{font-size: 50px;
 }
 .ville:hover{
     border: 3px solid rgb(107, 56, 27); /*on reecrit vile.hover pur que l'element hover ne soit pas utilise en pemenance et ne soit utilise seulement si on survole l'image*/
-    display: flex;
+   
 }
 .quebec{
     background-image: url("https://m1.quebecormedia.com/emp/emp/AdobeStock_9146183633340052-4f2c-42e8-bf2e-dad35695822b_ORIGINAL.jpg?impolicy=crop-resize&x=0&y=0&w=5470&h=3647&width=960");
@@ -169,8 +201,9 @@ h1{font-size: 50px;
     grid-template-columns:  repeat(3,1fr);
     /*grid-template-rows:1fr 2fr;   /* min_heiht et min_widht sont la taille qu'on donne a nos elwments par contre height et widht sont um peu comme le multiplicateur de la taille par exemple 50 c'est la taille initiale et 100 le double de la taille et aimsi de suite*/
     gap:30px;
-    
-    
+
+
+
 }
 
 .mot{
@@ -306,6 +339,9 @@ footer{
     .flexfoot{
         flex-direction: column;
     }
+    .informations{
+        margin: 40px;
+    }
 }
 @media all and (max-width: 570px) {
     .conteneur{
@@ -331,7 +367,23 @@ footer{
     }
     .font{
         font-size: 15px;
-    }              }
+    }
+    .informations{
+        margin: 30px;
+    }
+    .bouton{
+        margin: 20px;
+        color: rgb(27, 27, 78);
+        font-size: 30px;
+        background-color: hsl(36, 56%, 48%);
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 4px;}
+    .footmarge{
+        margin: 20px;
+        font-size: 80px;
+    }              
+    }
 
 
 /* telephone:400

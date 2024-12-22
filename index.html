@@ -8,19 +8,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="design/style.css">
 
-        <meta name="" content="">
+        <meta name="" content=""> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
-
 
     </head>
 
     <body>   <!-- conteneur controle que l'espce de gauche et dre droitr soit proportionnel mais les elements restent en haut par contre bienvenue fait ensorte que ces elements bien que l'espace entre eux est proportionnel que ces elements soient au centre peut-etre-->
 
-      <!--<section class="tete">
-        <div class="inline">First travel</div>
-      </section>-->
-    
       <div class="main">
         <a href=""class="vide ">First travel</a>
         <!--<a href="" class="color">about</a>-->
@@ -28,14 +23,9 @@
         <a href=""class="color"> services</a>
         <a href="" class="color"> adresses</a>
         <a href="" class="color"> ouverture</a>
-        
-
-    
       </div>
         
-        
         <section id="bienvenue"> <!-- ici nous avons d'abord cree un header puis une balise div avec une classe pour center les elements de mon header puis avons cree une balise section avec une classe pour superposer mes elements de mon header sur mon image-->
-              
             <div class="conteneur"> <!-- ici l'image se controle toute seule donc elle applique toutte seule ses proprietes-->
                                     <!-- par contre les classes se touvant dans image peuvent beneficier less proprietes d'autres classses et chaque classse peut se controler-->
                 <header>
@@ -43,21 +33,23 @@
                     First Travel        <!--bienvenue controle chaque element se touvant dans cet id-->
                     </div>
                     <span class="slogan">L'expert de voyage de reve au pays du soleil levant. </span>
+ 
                 </header>
             </div>
-        
         </section>
                                             <!-- contenu c'est pour dimensionner nos marges et conteneur c'est pour centrer nos elements de la balise-->
         <section class="contenu conteneur">  <!--  ici on veut centrer que nos textes voila pourquoi on utilise une seule classe qui prend en entree une autre classe et a qui on va appliquer les memes valeurs donc on doit d'abord avoir une classe definie bien sur qui a un div pour qu'on applique seulements les elements concernes(les lettres)--> 
                 <section> <!-- on utilise pas directement pas certaines balises car on ne veut pas appliquer certaines proprietes a certains elements voila pourquoi on fait des classes pour cetains elements d'un bloc-->
-                    <h1 class="destination"> NOS MEILLEURES DESTINATONS</h1>
+                    <h1 class="destination" > NOS MEILLEURES DESTINATONS</h1>
+                    <hr class="lig2">
+                    <!--<pre>mesure preventive pour les enfants</pre>-->
                     <p class="top"> 
                         Choisissez votre future destination dans une petite collection  des villes les plus populaires
                      chez nos touristes :
                     </p>
-                <section class="flexboxville">  <!-- ici cette classe controle tout les elements ca veut dire chaque image en soi  voila pourquoi elle entoure toutes les autres classes et du coup elle controle chaque classe premiere-->
-                    <a href=""  class="quebec ville"> Quebec</a>  <!-- par contre les classses premieres ici heritent les proprietes de la seconde classe-->
-                    <a href="" class="kyoto ville"> Kyoto </a>
+                <section class="flexboxville">  <!-- cette classe controle toutes les images si on avait mis toutes les images en elle seule la derniere serait affecte voila pourquoi il y a une classe pour chaque image-->
+                    <a href=""  class="quebec ville"> Quebec</a>  <!-- ainsi flexboville controle chaque image specialement mais generalement et chaque ville(quebec,kyoto,etc)heritent les proprietes de la seconde classe comune a toutes ainsi chaque vile peut controle sa ligne et ses colonnes-->
+                    <a href="" class="kyoto ville"> Kyoto</a>
                     <a href="" class="kinshasa ville"> kinshasa</a>
                     <a href="" class="lubumbashi ville"> Lubumbashi</a>
                     </section>
@@ -65,9 +57,9 @@
                 <a href="" class="lien">En voir plus</a><svg class="lien "  xmlms="http://www.w3.org/2000/svg" widht="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z"/></svg>
                 </div>
                     </section>
-                
+                <!--<hr class="lig">-->
                     <h2> Inscris-toi ici:</h2>
-                    <section>
+                    <form action="radjahsaidi98@gmail.com">
                         <div class="bloc">
                         <label for="nom">Nom :</label>
                         <input  type="text ">
@@ -80,6 +72,15 @@
                         <label for="post_nom ">Numero</label>
                         <input type="text ">
                         </div>
+                        <!--<label for="date">Date</label><br>
+                        <input type="date">
+                        <label for="demand">quel genre es-tu?</label><br>
+                        <label for="homme">homme</label>
+                        <input type="radio"><br>
+                        <label for="femme">femme</label>
+                        <input type="checkbox">-->
+                    </form>    
+                     <a href=""><button class="bouton"> Clique ici </button></a>
                     </section>
                      <!-- pour nos listes on use la balise nav pour les barres de navigation -->
         </section>
