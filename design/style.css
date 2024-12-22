@@ -307,7 +307,7 @@ footer{
 /*inline-block qui peut etre redimensionner et avoir des elements autour ,block qui ne peut pas avoir des elements autour*/
 /*sur kyoto comme elle commence a la colonne n 2 et ca termine a 4 donc a 3 du coup et nous on defini que 2 colonnes donc ca prend 2 plus une colonne et il reste une colonne d'ou on met l'element d'apres et du coup l'element suivant n'a plu de place alors on lui en cree mais petite place alors on rend kyoto a auto pour qu'il soit 1fr*/
 
-@media all and (max-width: 1350px) {
+@media all and (max-width: 1300px) {
     .conteneur{
         width: 800px;
     }
@@ -371,18 +371,7 @@ footer{
     .informations{
         margin: 30px;
     }
-    .bouton{
-        margin: 20px;
-        color: rgb(27, 27, 78);
-        font-size: 30px;
-        background-color: hsl(36, 56%, 48%);
-        cursor: pointer;
-        border-radius: 10px;
-        padding: 4px;}
-    .footmarge{
-        margin: 20px;
-        font-size: 80px;
-    }              
+          
     }
 
 
